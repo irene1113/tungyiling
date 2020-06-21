@@ -5,13 +5,13 @@ const Navigator = () => (
 	<nav>
 		<ul>
 			<li>
-				<Link to="/">Home</Link>
+				<Link to="/projects">PROJECTS</Link>
 			</li>
 			<li>
-				<Link to="/members">Members</Link>
+				<Link to="/about">ABOUT</Link>
 			</li>
 			<li>
-				<Link to="/blogs">Blogs</Link>
+				<Link to="/contact">CONTACT</Link>
 			</li>
 		</ul>
 	</nav>

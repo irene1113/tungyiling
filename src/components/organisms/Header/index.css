@@ -1,6 +1,56 @@
 .header {
-	width: 100%;
+	display: flex;
+	position: fixed;
+	height: 100%;
+	width: 64px;
 	color: white;
-	background-color: var(--primary);
-	padding: 10px 0;
+	background-color: white;
+	border-right: 1px solid var(--gray);
+	z-index: 100;
+
+	& > .nav {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		flex: auto;
+		position: relative;
+		padding: 6vh 12px 6vh 30px;
+
+		& > .link-item {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+			position: relative;
+
+			&:not(:first-child) {
+				margin-top: 6vh;
+			}
+
+			& > a {
+				display: inline-flex;
+				writing-mode: vertical-rl;
+				text-orientation: sideways;
+				transform: rotate(-180deg);
+				font-family: 'Roboto', sans-serif;
+				font-weight: bold;
+				color: var(--gray);
+			}
+
+			& > .active-box {
+				position: absolute;
+				top: -20px;
+				left: -10px;
+				width: 60px;
+				height: 60px;
+				border: 10px solid var(--primary);
+			}
+
+			&.active {
+				& > a {
+					color: var(--black);
+				}
+			}
+		}
+	}
 }
