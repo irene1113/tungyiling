@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`__interactive 1`] = `
+<DocumentFragment>
+  <div
+    class="fullNameTitle"
+  >
+    <span
+      style="font-size: 110px;"
+    >
+      YILING
+    </span>
+    <span
+      style="font-size: 110px;"
+    >
+      TUNG
+    </span>
+  </div>
+</DocumentFragment>
+`;

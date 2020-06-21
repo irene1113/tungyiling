@@ -1,0 +1,17 @@
+.full-name-title {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	& > span {
+		display: inline-flex;
+		line-height: 0.75;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		color: var(--black);
+
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+}
