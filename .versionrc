@@ -1,0 +1,5 @@
+{
+	"commitUrlFormat": "https://github.com/irene1113/tungyiling/commit/{{hash}}",
+	"compareUrlFormat": "https://github.com/irene1113/tungyiling/compare/{{previousTag}}...{{currentTag}}",
+	"issueUrlFormat": "https://github.com/irene1113/tungyiling/issues/{{id}}"
+}
