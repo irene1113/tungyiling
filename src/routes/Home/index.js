@@ -1,8 +1,5 @@
-import React from 'react';
 import { hot } from 'react-hot-loader/root';
 
-import styles from './index.css';
+import LandingPageLayout from 'layouts/LandingPage';
 
-const Home = () => <div className={styles.home}>Home</div>;
-
-export default hot(Home);
+export default hot(LandingPageLayout);
