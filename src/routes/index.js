@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ProjectsRoute from './Projects';
+
 const routes = {
 	path: '/',
 	components: () => [],
@@ -23,6 +25,7 @@ const routes = {
 				return children;
 			},
 		},
+		ProjectsRoute,
 	],
 };
 
