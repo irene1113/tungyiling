@@ -1,0 +1,27 @@
+.experience-list-item {
+	position: relative;
+	padding-left: 30px;
+	color: var(--black);
+
+	&::before {
+		display: inline-flex;
+		content: '';
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		left: 0;
+		top: 7px;
+		background: var(--gray);
+	}
+
+	& > .duration {
+		font-size: 18px;
+		font-family: 'Puritan', sans-serif;
+		margin-bottom: 10px;
+	}
+
+	& > .content {
+		font-size: 14px;
+		font-weight: 300;
+	}
+}

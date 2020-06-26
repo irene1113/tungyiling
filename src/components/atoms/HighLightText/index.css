@@ -1,0 +1,10 @@
+.high-light-text {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--black);
+	color: white;
+	padding: 0 8px;
+	font-size: 22px;
+	font-weight: bold;
+}

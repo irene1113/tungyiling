@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ProjectsRoute from './Projects';
+import AboutRoute from './About';
 
 const routes = {
 	path: '/',
@@ -26,6 +27,7 @@ const routes = {
 			},
 		},
 		ProjectsRoute,
+		AboutRoute,
 	],
 };
 

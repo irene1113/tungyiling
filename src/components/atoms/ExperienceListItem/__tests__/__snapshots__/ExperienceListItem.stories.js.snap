@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`__interactive 1`] = `
+<DocumentFragment>
+  <div
+    class="experienceListItem"
+  >
+    <div
+      class="duration"
+    >
+      2017 - Now
+    </div>
+    <div
+      class="content"
+    >
+      25sprout, Frontend Developer
+    </div>
+  </div>
+</DocumentFragment>
+`;
