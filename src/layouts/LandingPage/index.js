@@ -1,8 +1,10 @@
 import React from 'react';
 import classnames from 'classnames';
 
+import Logo from 'images/logo.inline.svg';
+import ColorBlockIcon from 'images/icon/color-block.inline.svg';
+
 import Link from 'components/atoms/Link';
-import FullNameTitle from 'components/atoms/FullNameTitle';
 
 import styles from './index.css';
 
@@ -19,7 +21,15 @@ const LinkItem = ({ to, text = '' }) => (
 
 const LandingPageLayout = () => (
 	<div className={styles.landingPageLayout}>
-		<FullNameTitle className={styles.fullname} />
+		<div className={styles.logo}>
+			<Logo />
+		</div>
+		<div className={classnames(styles.colorBlock, styles.primary)}>
+			<ColorBlockIcon />
+		</div>
+		<div className={classnames(styles.colorBlock, styles.gray)}>
+			<ColorBlockIcon />
+		</div>
 		<div className={styles.pageLinks}>
 			<LinkItem to="/projects" text="PROJECTS" />
 			<LinkItem to="/about" text="ABOUT" />
