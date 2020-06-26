@@ -2,30 +2,4 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-
-	& > .bottom-fixed {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-
-		& > .name-mark {
-			position: relative;
-
-			& > .fullname {
-				position: absolute;
-				right: 30px;
-				bottom: 130px;
-			}
-
-			& > .num {
-				font-size: 260px;
-				font-family: 'Roboto', sans-serif;
-				line-height: 1;
-				letter-spacing: -19px;
-				font-weight: bold;
-				margin-bottom: -100px;
-				color: var(--lightGray);
-			}
-		}
-	}
 }
