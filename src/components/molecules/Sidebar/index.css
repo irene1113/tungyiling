@@ -3,15 +3,19 @@
 	position: fixed;
 	height: 100vh;
 	width: 0;
-	z-index: 200;
-	transition: width 0.3s;
+	z-index: 250;
+	transition: width 0.1s ease-out;
+
+	&.fake {
+		z-index: 99;
+	}
 
 	& > .hamburger {
 		position: fixed;
 		left: -60px;
-		z-index: 20;
+		z-index: 400;
 		transform: translateY(-50%);
-		transition: left 0.3s;
+		transition: left 0.3s ease-out;
 		cursor: pointer;
 
 		&.is-show {
@@ -30,10 +34,24 @@
 		right: 0%;
 		top: 0;
 		transform: translateY(-50%);
-		transition: right 0.3s;
+		transition: right 0.3s ease-out;
 
 		&.is-show {
 			right: -60px;
+		}
+
+		& > div {
+			display: inline-flex;
+			flex-shrink: 0;
+			background: var(--primary);
+			border-radius: 50%;
+			height: 600vh;
+			width: 600vh;
+			position: fixed;
+			right: 0%;
+			top: 0;
+			transform: translateY(-50%);
+			transition: right 0.3s ease-out;
 		}
 	}
 
@@ -42,7 +60,16 @@
 		flex-direction: column;
 		padding-top: 60px;
 		padding-left: 60px;
+		transform: translateX(-100%);
+		transition: all 0.1s ease-out;
+		opacity: 0;
 		z-index: 10;
+
+		&.show {
+			transition: transform 0.1s ease-out, opacity 0.3s ease-out;
+			transform: translateX(0);
+			opacity: 1;
+		}
 
 		& > .link-item {
 			display: flex;
@@ -59,6 +86,7 @@
 
 	&.open {
 		width: 100vw;
+		z-index: 100;
 
 		& > .hamburger {
 			left: 0;
@@ -69,8 +97,7 @@
 		}
 	}
 
-	& > .filter-svg {
+	& > .goo-sidebar-svg {
 		display: none;
-		position: absolute;
 	}
 }

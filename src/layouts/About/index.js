@@ -12,7 +12,7 @@ import styles from './index.css';
 const AboutLayout = () => (
 	<div className={styles.aboutLayout}>
 		<div className={styles.info}>
-			<BigTitle className={styles.title}>Hey, there!</BigTitle>
+			<BigTitle className={styles.title}>Hey!</BigTitle>
 			<div className={styles.content}>
 				<div className={styles.intro}>
 					<span>I'm Yiling Tung.</span>

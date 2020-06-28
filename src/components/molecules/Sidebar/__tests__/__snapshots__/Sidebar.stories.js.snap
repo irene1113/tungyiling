@@ -4,15 +4,171 @@ exports[`__interactive 1`] = `
 <DocumentFragment>
   <div
     class="sidebar"
-    style="filter: url(#sticky-menu);"
+    style="filter: url();"
+  >
+    <test-file-stub
+      classname="hamburger"
+      style="top: 100px;"
+    />
+    <div
+      class="nav"
+    >
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/projects"
+          role="button"
+          tabindex="0"
+        >
+          PROJECTS
+        </a>
+      </div>
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/about"
+          role="button"
+          tabindex="0"
+        >
+          ABOUT
+        </a>
+      </div>
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/contact"
+          role="button"
+          tabindex="0"
+        >
+          CONTACT
+        </a>
+      </div>
+    </div>
+    <div
+      class="arc"
+      style="top: 100px; filter: url();"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`open 1`] = `
+<DocumentFragment>
+  <div
+    class="sidebar open"
+    style="filter: url();"
+  >
+    <test-file-stub
+      classname="hamburger isShow"
+      style="top: 30px;"
+    />
+    <div
+      class="nav show"
+    >
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/projects"
+          role="button"
+          tabindex="0"
+        >
+          PROJECTS
+        </a>
+      </div>
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/about"
+          role="button"
+          tabindex="0"
+        >
+          ABOUT
+        </a>
+      </div>
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/contact"
+          role="button"
+          tabindex="0"
+        >
+          CONTACT
+        </a>
+      </div>
+    </div>
+    <div
+      class="arc isShow"
+      style="top: 100px; filter: url();"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`show 1`] = `
+<DocumentFragment>
+  <div
+    class="sidebar"
+    style="filter: url();"
   >
     <test-file-stub
       classname="hamburger isShow"
       style="top: 100px;"
     />
     <div
+      class="nav"
+    >
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/projects"
+          role="button"
+          tabindex="0"
+        >
+          PROJECTS
+        </a>
+      </div>
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/about"
+          role="button"
+          tabindex="0"
+        >
+          ABOUT
+        </a>
+      </div>
+      <div
+        class="linkItem"
+      >
+        <a
+          class=""
+          href="/contact"
+          role="button"
+          tabindex="0"
+        >
+          CONTACT
+        </a>
+      </div>
+    </div>
+    <div
       class="arc isShow"
-      style="top: 100px;"
+      style="top: 100px; filter: url();"
     />
   </div>
 </DocumentFragment>

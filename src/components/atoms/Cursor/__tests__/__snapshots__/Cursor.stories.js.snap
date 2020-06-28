@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`__interactive 1`] = `
+<DocumentFragment>
+  <div
+    class="cursor small"
+    style="left: -100px; top: 100px;"
+  />
+</DocumentFragment>
+`;
+
+exports[`small 1`] = `
+<DocumentFragment>
+  <div
+    class="cursor small"
+    style="left: -100px; top: 100px;"
+  />
+</DocumentFragment>
+`;

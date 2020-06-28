@@ -1,0 +1,17 @@
+.cursor {
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: var(--primary);
+	transform: translateX(-50%) translateY(-50%);
+	transition: all 0.3s ease-out;
+	pointer-events: none;
+	z-index: 200;
+
+	&.small {
+		height: 15px;
+		width: 15px;
+		background-color: white;
+	}
+}
