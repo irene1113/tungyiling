@@ -9,13 +9,6 @@
 		padding: 30px 0 60px;
 		margin-right: 15px;
 		border-right: 1px solid var(--gray);
-		height: 100vh;
-		overflow-y: auto;
-		-ms-overflow-style: none;
-
-		&::-webkit-scrollbar {
-			display: none;
-		}
 
 		& > .title {
 			margin-bottom: 48px;
@@ -56,12 +49,22 @@
 	& > .photo {
 		display: inline-flex;
 		flex-shrink: 0;
+		position: relative;
 		width: 50vh;
 		max-width: 40vw;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: right center;
-		transform: scaleX(-1);
-		opacity: 0.8;
+
+		& > div {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: right;
+			background-attachment: fixed;
+			transform: scaleX(-1);
+			opacity: 0.8;
+		}
 	}
 }

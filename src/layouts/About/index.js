@@ -34,7 +34,9 @@ const AboutLayout = () => (
 				</div>
 			</div>
 		</div>
-		<div className={styles.photo} style={{ backgroundImage: `url(${Photo})` }} />
+		<div className={styles.photo}>
+			<div style={{ backgroundImage: `url(${Photo})` }} />
+		</div>
 	</div>
 );
 
