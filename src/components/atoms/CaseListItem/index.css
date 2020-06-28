@@ -2,6 +2,7 @@
 	color: var(--black);
 
 	& > .title {
+		font-family: 'Asap', sans-serif;
 		font-size: 22px;
 		font-weight: 700;
 		margin-bottom: 10px;
