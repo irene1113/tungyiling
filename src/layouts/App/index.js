@@ -1,17 +1,13 @@
 import React from 'react';
 
-import { useRouting } from 'models/routing';
-
-import Header from 'components/organisms/Header';
+import Sidebar from 'components/molecules/Sidebar';
 
 import styles from './index.css';
 
 const App = ({ children }) => {
-	const [{ pathname }] = useRouting();
-
 	return (
 		<div className={styles.app}>
-			{pathname !== '/' && <Header />}
+			<Sidebar />
 			{children}
 		</div>
 	);
