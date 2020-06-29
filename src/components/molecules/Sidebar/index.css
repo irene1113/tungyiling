@@ -80,6 +80,29 @@
 				font-weight: bold;
 				margin: 10px 0;
 				font-family: 'Asap', sans-serif;
+				transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+				transform: translateX(0);
+
+				& > span {
+					display: inline-flex;
+					flex: auto;
+					font-size: 8vw;
+					font-weight: bold;
+					margin-left: 24px;
+					font-family: 'Asap', sans-serif;
+					opacity: 0;
+					transform: scale(0);
+					transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+				}
+
+				&:hover {
+					transform: translateX(40px);
+
+					& > span {
+						opacity: 1;
+						transform: scale(1);
+					}
+				}
 			}
 		}
 	}

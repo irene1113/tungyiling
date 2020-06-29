@@ -25,6 +25,7 @@ const LinkItem = ({ className, to, active, closeMenu = () => {}, children }) => 
 	<div className={classnames(styles.linkItem, className, active && styles.active)}>
 		<Link to={to} className={classnames(className, active && styles.active)} onClick={closeMenu}>
 			{children}
+			<span>!!</span>
 		</Link>
 	</div>
 );
