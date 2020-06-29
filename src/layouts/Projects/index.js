@@ -17,6 +17,8 @@ const ProjectsLayout = () => (
 					title={caseData[id].title}
 					duration={caseData[id].duration}
 					content={caseData[id].content}
+					tags={caseData[id].tags}
+					link={caseData[id].link}
 				/>
 			))}
 		</div>

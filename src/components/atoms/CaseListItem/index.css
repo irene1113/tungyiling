@@ -1,21 +1,45 @@
 .case-list-item {
 	color: var(--black);
 
+	& > *:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
 	& > .title {
 		font-family: 'Asap', sans-serif;
 		font-size: 22px;
 		font-weight: 700;
-		margin-bottom: 10px;
 	}
 
 	& > .duration {
 		font-size: 18px;
 		font-family: 'Puritan', sans-serif;
-		margin-bottom: 10px;
 	}
 
 	& > .content {
 		font-size: 14px;
 		font-weight: 300;
+	}
+
+	& > .tags {
+		display: flex;
+		flex: auto;
+
+		& > div {
+			font-size: 12px;
+
+			&:not(:first-child) {
+				margin-left: 6px;
+			}
+		}
+	}
+
+	& > .link {
+		display: inline-flex;
+		height: 20px;
+		width: 30px;
+		font-size: 12px;
+		font-weight: bold;
+		color: var(--primary);
 	}
 }
