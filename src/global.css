@@ -19,6 +19,11 @@
 	outline: none;
 }
 
+*::selection {
+	background: var(--black);
+	color: white;
+}
+
 body,
 input,
 select,
