@@ -3,7 +3,7 @@
 	position: fixed;
 	height: 100vh;
 	width: 0;
-	z-index: 250;
+	z-index: 100;
 	transition: width 0.1s ease-out;
 
 	&.fake {
@@ -109,7 +109,6 @@
 
 	&.open {
 		width: 100vw;
-		z-index: 100;
 
 		& > .hamburger {
 			left: 0;

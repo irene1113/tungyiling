@@ -19,8 +19,10 @@ const Cursor = ({ className }) => {
 			setFalse();
 		} else if (open && mousePosition.x < document.documentElement.clientWidth * 0.9 && !isSmall) {
 			setTrue();
-		} else if (!open && isSmall) {
+		} else if (!open && mousePosition.x > 60 && isSmall) {
 			setFalse();
+		} else if (!open && mousePosition.x < 60 && !isSmall) {
+			setTrue();
 		}
 	}, [open, mousePosition]);
 
